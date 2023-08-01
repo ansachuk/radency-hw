@@ -2,7 +2,7 @@
 	"name": "radency-hw",
 	"private": true,
 	"version": "0.0.0",
-	"homepage":"https://ansachuk.github.io/radency-hw/",
+	"base": "/radency-hw/",
 	"type": "module",
 	"scripts": {
 		"start": "vite",
