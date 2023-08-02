@@ -1,0 +1,32 @@
+html {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	&::before,
+	&::after {
+		box-sizing: inherit;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.link {
+	text-decoration: none;
+	color: currentColor;
+}
+
+.list {
+	list-style: none;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
