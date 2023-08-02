@@ -2,7 +2,6 @@
 	"name": "radency-hw",
 	"private": true,
 	"version": "0.0.0",
-	"base": "/radency-hw/",
 	"type": "module",
 	"scripts": {
 		"start": "vite",
@@ -10,7 +9,7 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"vite": "^4.4.5"
+		"vite": "^4.4.8"
 	},
 	"dependencies": {
 		"sass": "^1.64.1"
