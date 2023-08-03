@@ -12,11 +12,25 @@
 		text-align: center;
 	}
 }
+td[data-column-id="name"] > div {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
 .iconWrapper {
-	background-color: rgba(128, 128, 128, 0.449);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 54px;
+	height: 54px;
+	background-color: rgb(128, 128, 128);
+	border-radius: 50%;
 
 	.mainIcon {
 		stroke: black;
-		border-radius: 50%;
 	}
+}
+.mainName {
+	font-size: 22px;
+	font-weight: 600;
 }

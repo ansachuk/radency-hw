@@ -6,9 +6,9 @@ import sprite from "../icons/sprite.svg";
 
 const makeCellString = (iconHref, cell) => {
 	return html(
-		`<span class="iconWrapper"><svg class="mainIcon" width="54" height="54">
+		`<div class="iconWrapper"><svg class="mainIcon" width="30" height="30">
 			<use href="${sprite}#${iconHref}"></use>
-		</svg></span><p>${cell}</p>`,
+		</svg></div><span class="mainName">${cell}</span>`,
 		"div",
 	);
 };
