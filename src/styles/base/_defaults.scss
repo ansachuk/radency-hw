@@ -1,3 +1,21 @@
 .container {
 	padding: 40px 16px;
 }
+
+.is-hidden {
+	position: absolute;
+
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+
+	margin: -5px;
+	border: 0;
+	padding: 0;
+
+	clip: rect(0 0 0 0);
+}

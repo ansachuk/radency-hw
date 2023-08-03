@@ -11,7 +11,7 @@ export const columns = [
 	"Dates",
 	{
 		id: "options",
-		formatter: (_, row) => console.log("row", row),
+		// formatter: (_, row) => console.log("row", row),
 	},
 ];
 export const data = [

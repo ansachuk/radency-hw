@@ -9,7 +9,14 @@
 	<body>
 		<div class="container">
 			<div id="mainTable"></div>
-			<button type="button">Add Note</button>
+			<button type="button" class="modalOpenBtn">Add Note</button>
+		</div>
+
+		<div class="backdrop is-hidden">
+			<div class="modal">
+				<button type="button" class="modalCloseBtn">close</button>
+				<p class="modalTitle">Залиште свої дані, ми вам передзвонимо</p>
+			</div>
 		</div>
 		<script type="module" src="/src/index.js"></script>
 	</body>
