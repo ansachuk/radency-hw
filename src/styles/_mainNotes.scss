@@ -33,3 +33,37 @@ td[data-column-id="name"] > div {
 	font-size: 22px;
 	font-weight: 600;
 }
+
+.options {
+	display: inline-flex;
+	width: 100%;
+
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+
+	&Button {
+		height: 40px;
+		width: 30%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		border: none;
+		border-radius: 16px;
+		background-color: rgba(128, 128, 128, 0.624);
+
+		transition-property: background-color;
+		transition-duration: 250ms;
+		transition-timing-function: ease-out;
+
+		&:hover {
+			background-color: rgba(128, 128, 128, 0.782);
+		}
+
+		&:active {
+			background-color: rgb(128, 128, 128);
+		}
+	}
+}

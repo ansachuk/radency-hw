@@ -13,7 +13,7 @@ const makeCellString = (iconHref, cell) => {
 	);
 };
 
-const compareCategory = (cell, row) => {
+export const compareCategory = (cell, row) => {
 	const category = row._cells[2].data.toLowerCase();
 
 	switch (category) {
@@ -34,4 +34,8 @@ const compareCategory = (cell, row) => {
 			break;
 	}
 };
-export default compareCategory;
+export const optionsFormatter = (_, row) => {
+	return html(
+		'<div class="options"><button type="button" class="optionsButton"><svg class="optionIcon" width="22" height="22"><use href="./src/icons/sprite.svg#edit"></use></svg></button><button type="button" class="optionsButton"><svg class="optionIcon" width="22" height="22"><use href="./src/icons/sprite.svg#archive"></use></svg></button><button type="button" class="optionsButton"><svg class="optionIcon" width="22" height="22"><use href="./src/icons/sprite.svg#delete"></use></svg></button></div>',
+	);
+};

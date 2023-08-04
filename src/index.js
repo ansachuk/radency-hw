@@ -1,17 +1,10 @@
-import { Grid } from "gridjs";
 import "gridjs/dist/theme/mermaid.css";
-import "./styles/index.scss";
-import { columns, data } from "./data/mainTabledata";
+import { nanoid } from "nanoid";
 
-const mainTable = new Grid({
-	columns,
-	data,
-	className: {
-		th: "mainTh",
-		td: "mainTd",
-		table: "mainTable",
-	},
-}).render(document.getElementById("mainTable"));
+import mainTable from "./js/mainTable/mainTable";
+import { data } from "./js/mainTable/mainTabledata";
+
+import "./styles/index.scss";
 
 const backdrop = document.querySelector(".backdrop");
 const modalOpenBtn = document.querySelector(".modalOpenBtn");
@@ -46,6 +39,7 @@ const handleFormSubmit = e => {
 		category: category.value,
 		content: content.value,
 		created: new Date().toDateString(),
+		_id: nanoid(),
 	};
 	console.log("data", data);
 
