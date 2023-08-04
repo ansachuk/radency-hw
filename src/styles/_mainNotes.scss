@@ -1,6 +1,4 @@
 .mainTable {
-	margin-bottom: 30px;
-
 	.mainTh {
 		background-color: rgba(67, 67, 67, 0.573);
 
@@ -17,6 +15,7 @@ td[data-column-id="name"] > div {
 	align-items: center;
 	gap: 12px;
 }
+
 .iconWrapper {
 	display: inline-flex;
 	justify-content: center;

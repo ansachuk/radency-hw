@@ -6,7 +6,15 @@ export const columns = [
 		formatter: compareCategory,
 	},
 	"Created",
-	"Category",
+
+	{
+		name: "Category",
+		formatter: cell => {
+			const letters = cell.split("");
+			letters[0] = letters[0].toUpperCase();
+			return letters.join("");
+		},
+	},
 	"Content",
 	"Dates",
 	{

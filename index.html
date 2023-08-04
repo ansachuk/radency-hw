@@ -14,8 +14,33 @@
 
 		<div class="backdrop is-hidden">
 			<div class="modal">
-				<button type="button" class="modalCloseBtn">close</button>
-				<p class="modalTitle">Залиште свої дані, ми вам передзвонимо</p>
+				<button type="button" class="modalCloseBtn">
+					<svg class="modalCloseIcon" width="20" height="20">
+						<use href="./src/icons/sprite.svg#cross"></use>
+					</svg>
+				</button>
+				<p class="modalTitle">Add note!</p>
+				<form class="modalForm">
+					<label>
+						Name
+						<input name="name" type="text" placeholder="Name of note..." />
+					</label>
+					<label>
+						Category
+						<select name="category">
+							<option value="task">Task</option>
+							<option value="thought">Random thought</option>
+							<option value="quote">Quote</option>
+							<option value="idea">Idea</option>
+						</select>
+					</label>
+					<label>
+						Content
+						<textarea name="content" cols="30" rows="10" placeholder="Enter your text here..."></textarea>
+					</label>
+
+					<button class="modalSubmit" type="submit">Add note</button>
+				</form>
 			</div>
 		</div>
 		<script type="module" src="/src/index.js"></script>

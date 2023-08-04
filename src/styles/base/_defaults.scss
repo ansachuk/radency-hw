@@ -1,5 +1,23 @@
 .container {
 	padding: 40px 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.backdrop {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+	background-color: #00000093;
+	overflow: hidden;
 }
 
 .is-hidden {
